@@ -6,7 +6,7 @@
 //  Copyright © 2022-2024 Daniel Saidi. All rights reserved.
 //
 
-#if os(iOS)
+#if os(iOS) || os(tvOS) || os(visionOS)
 import SwiftUI
 
 /// This view can be used to create an overlay that can then
