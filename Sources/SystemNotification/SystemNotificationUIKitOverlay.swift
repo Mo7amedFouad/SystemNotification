@@ -37,6 +37,7 @@ public extension SystemNotificationUIKitOverlay {
         let overlay = UIHostingController(rootView: self)
         view.addSubview(overlay.view)
         overlay.view.backgroundColor = .clear
+        overlay.view.isUserInteractionEnabled = false
         overlay.view.translatesAutoresizingMaskIntoConstraints = false
         overlay.view.leadingAnchor.constraint(equalTo: view.leadingAnchor).isActive = true
         overlay.view.trailingAnchor.constraint(equalTo: view.trailingAnchor).isActive = true
